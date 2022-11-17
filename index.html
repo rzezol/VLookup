@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8"></head>
+<title>VLookup</title>
+<body>
+    <script src="scripts.js"></script>
+
+    <table style="width:100%">
+        <tr>
+            <th>Klucze</th>
+            <th>Klucze z dopasowaniem</th>
+        </tr>
+        <tr>
+            <th>
+                <textarea id="Keys"
+                    style="width:98%; height: 300px;"
+                    placeholder="Wklej tutaj skopiowaną JEDNĄ kolumnę z kluczami (np. EAN/SKU), te do których chcesz dopasować jakieś dane (np. opisy)."></textarea>
+            </th>
+            <th>
+                <textarea id="KeyValuePairs"
+                    style="width:98%; height: 300px;"
+                    placeholder="Wklej tutaj skopiowane DWIE kolumny: z kluczami (np. EAN/SKU) oraz dopasowanymi do tych kluczy wartościami (np. opisami).&#10;&#13;Jeśli w Excelu kolumnę z kluczami masz po prawej stronie względem kolumny z wartościami to po prostu zaznacz ten checkbox poniżej, a ja już to ogarnę :)"></textarea>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <input type="checkbox" id="KeyOnRight" style="margin-left: 50%;">
+                <label for="KeyOnRight">Klucz w prawej kolumnie</label>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button id="Execute" style="width: 180px; height: 40px" onclick="execute()">Dopasuj</button>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2">Dopasowane (wynik)</th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <textarea id="Result"
+                style="width: 50%; height: 300px;"
+                placeholder="Kliknij &quot;Dopasuj&quot; aby zobaczyć dopasowane wartości do kluczy. Skopiuj zawartość tego pola tekstowego i wklej do Excela.&#10;&#13;I gotowe :)"></textarea>
+            </th>
+        </tr>
+    </table>
+   
+    
+</body>
+</html>
