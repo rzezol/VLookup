@@ -2,6 +2,7 @@ var _keyValueDict = {};
 
 function execute(){
     
+    _keyValueDict = {};
     fillKeyValueDictionary();
     matchValuesByKeysInDictionary();
 }
