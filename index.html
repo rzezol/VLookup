@@ -22,13 +22,20 @@
                     placeholder="Wklej tutaj skopiowane DWIE kolumny: z kluczami (np. EAN/SKU) oraz dopasowanymi do tych kluczy wartościami (np. opisami).&#10;&#13;Jeśli w Excelu kolumnę z kluczami masz po prawej stronie względem kolumny z wartościami to po prostu zaznacz ten checkbox poniżej, a ja już to ogarnę :)"></textarea>
             </th>
         </tr>
-        <tr>
+        <!-- <tr>
             <th colspan="2">
                 <input type="checkbox" id="KeyOnRight" style="margin-left: 50%;">
                 <label for="KeyOnRight">Klucz w prawej kolumnie</label>
             </th>
-        </tr>
+        </tr> -->
+        
         <tr>
+            <th colspan="2">
+                <button id="AddKeyValuePairs" style="width: 180px; height: 40px; margin-left: 50%;" onclick="addKeyValuePairsTextarea()">Dodaj następne klucze z dopasowaniem</button>
+            </th>
+        </tr>
+
+        <tr id="ExecuteRow">
             <th colspan="2">
                 <button id="Execute" style="width: 180px; height: 40px" onclick="execute()">Dopasuj</button>
             </th>
